@@ -217,8 +217,7 @@ li .current{
    font-size: 2em;
    line-height: 2.5em;
    margin-bottom: 1em;
-
-
+   margin-left: 5%;
 } 
 
 .biographyMain section{
@@ -226,15 +225,12 @@ li .current{
     flex-direction: column;
     padding: 1em;
     height: 640px;
-
  } 
 
  .biographyMain section p {
     margin: 1% 5% 1%;
     font-size: 1.25em;
     line-height: 1.5em;
-    max-height: ;
-    
 }
 
 .biographyMain section p:nth-last-of-type(1) {
@@ -473,6 +469,37 @@ footer li{
 /******  MEDIA QUERIES ******/
 
 @media only screen and (max-width: 1100px){
+    
+    /*BIOGRAPHY*/
+
+    .biographyMain{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pictureOverlay {
+        height: 300px;
+        width: 300px;
+        overflow: hidden;
+        border-radius: 15%;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .biographyMain img {
+        align-self: center;
+        /* clip-path: inset(10px 10px 200px 10px); */
+        height: 420px;
+        width: 300px;
+        margin-top: -25px;
+    }
+
+    .biographyMain section p:nth-last-of-type(1) {
+        margin-top: 2em;
+    }
+
+    /*RESUME*/
+    
     #resumeMain{
         flex-direction: column;
     }
@@ -487,21 +514,9 @@ footer li{
     }
 }
 
-@media only screen and (max-width: 1100px){
-    
-    .biographyMain{
-        flex-direction: column;
-        justify-content: center;
-    }
 
-    .biographyMain img {
-        align-self: center;
-    }
 
-    .biographyMain section p:nth-last-of-type(1) {
-        margin-top: 2em;
-    }
-}
+
 
 @media only screen and (max-width: 1010px){
     .overlay {
@@ -550,7 +565,7 @@ footer li{
 
 
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 505px){
 
     #indexp{
         font-size: 1em;
@@ -643,6 +658,9 @@ footer li{
 
      /*GALLERY*/ 
 
+     .galleryMain ul li img {
+        max-width: 100%;
+     }
 
 
    
@@ -652,6 +670,26 @@ footer li{
       footer{
         margin: auto auto 0 auto;
         flex-direction: row;
+      }
+
+      .footerLinksUl {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          margin-top: -15px ; 
+          height: 128px;
+          width: 46px;
+      }
+
+      .footerLinksLi {
+        padding: 0;
+        height: 20px;
+        margin:0;
+      }
+
+      .roadToHireLogo {
+        margin-left: 15px;
+        margin-top: 10px;
       }
 
 

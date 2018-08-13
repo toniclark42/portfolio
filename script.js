@@ -85,5 +85,4 @@ function validator(e) {
     }
 };
 
-console.log('abc');
 
