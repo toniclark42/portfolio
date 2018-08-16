@@ -29,38 +29,38 @@
                     </div>
                 </nav>
             </header>
-
-            <form name="contactForm" method="GET" id="contactform">
-                <!-- <fieldset> -->
-                    <!-- <legend id="personalinformation">Your Information:</legend> -->
-                    <div id="firstNameEntry">
-                        <label for="firstName" class="contactinfo">First Name:</label> 
-                        <input type="text"  id="firstName" name="firstName"/>
-                    </div> 
-                    <div id="lastNameEntry"> 
-                        <label for="lastName" class="contactinfo">Last Name:</label> 
-                        <input type="text" id="lastName" name="lastName"/>
-                    </div> 
-                    <div>
-                        <label for="phoneNumber" class="contactinfo">Phone: Number:</label>
-                        <input id="phoneNumber" name="phoneNumber"  />
-                    </div>
-                    <div id="emailEntry">
-                        <label for="emailInput" class="contactinfo"> Email Address:</label>
-                        <input type="email" id="emailInput" name="emailInput"  />
-                        <span class="error" aria-live="polite"></span>
-                    </div>
-                    <div id="companyEntry"> 
-                        <label for="company" class="contactinfo">Company:</label> 
-                        <input type="text" id="company" name="company"  />
-                    </div> 
-                <!-- </fieldset>     -->
-
-                    <textarea title="Enter questions or comments" name="comments" id="commentsEntry" placeholder="Enter questions or comments here..." cols="100" rows="15" ></textarea>
-                     
-                      
-                    <input class="submit" type="submit" value="submit">    
-                  </form>
+            <main>
+                <h1 class="contactMeHeader">Contact Me</h1>
+                <form name="contactForm" method="GET" id="contactform">
+                    <fieldset> 
+                        <legend id="personalinformation">Your Information:</legend>
+                        <div id="firstNameEntry">
+                            <label for="firstName" class="contactinfo">First Name:</label> 
+                            <input type="text"  id="firstName" name="firstName"/>
+                        </div> 
+                        <div id="lastNameEntry"> 
+                            <label for="lastName" class="contactinfo">Last Name:</label> 
+                            <input type="text" id="lastName" name="lastName"/>
+                        </div> 
+                        <div>
+                            <label for="phoneNumber" class="contactinfo">Phone: Number:</label>
+                            <input id="phoneNumber" name="phoneNumber"  />
+                        </div>
+                        <div id="emailEntry">
+                            <label for="emailInput" class="contactinfo">Email Address:</label>
+                            <input type="email" id="emailInput" name="emailInput"  />
+                            <span class="error" aria-live="polite"></span>
+                        </div>
+                        <div id="companyEntry"> 
+                            <label for="company" class="contactinfo">Company:</label> 
+                            <input type="text" id="company" name="company"  />
+                        </div> 
+                    </fieldset>    
+                    <label for="commentsEntry" class"contactinfo">Comments/Questions:</label>
+                        <textarea title="Enter questions or comments" name="comments" id="commentsEntry" placeholder="Enter questions or comments here..." cols="100" rows="15" ></textarea>
+                        <input class="submit" type="submit" value="submit">    
+                </form>
+            </main>
             <footer class="fixedFooter">
                 <ul class="footerNav">
                     <li ><a href="index.html">Home</a></li>
@@ -71,10 +71,10 @@
                     <li><a href="contact.html" class="current">Contact</a></li>
                 </ul>
                 <ul class="footerLinksUl">
-                    <li class="footerLinksLi"><a href="https://www.facebook.com/clark.toni"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="footerLinksLi"><a href="https://www.instagram.com/tl_clark2/"><i class="fab fa-instagram"></i></a></li>
-                    <li class="footerLinksLi"><a href="https://www.instagram.com/tl_clark2/"><i class="fab fa-linkedin"></i></a></li>
-                    <li class="footerLinksLi"><a href="https://www.roadtohire.org/"><img class="roadToHireLogo" src="img/roadtohirelogo.png" alt="Road to Hire Logo"></a>
+                    <li class="footerLinksLi"><a aria-label="facebook" href="https://www.facebook.com/clark.toni"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="footerLinksLi"><a aria-label="instagram" href="https://www.instagram.com/tl_clark2/"><i class="fab fa-instagram"></i></a></li>
+                    <li class="footerLinksLi"><a aria-label="linkedin" href="https://www.linkedin.com/in/toni-clark/"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="footerLinksLi"><a aria-label="road to hire" href="https://www.roadtohire.org/"><img class="roadToHireLogo" src="img/roadtohirelogo.png" alt="Road to Hire Logo"></a>
                 </ul> 
                 <p>Content on &copy;Toni Clark 2018 is used solely for educational purposes</p>      
             </footer>
