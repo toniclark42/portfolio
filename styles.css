@@ -97,14 +97,6 @@ h1, h2, h3, legend,
     margin-left: 0;
 }
 
-/* .navul{
-    display: none;
-} */
-
-/* .navOpen{
-    display: flex;
-} */
-
 .mainnav .heroNav{
     padding:0;
     font-size: 1.3em;
@@ -145,15 +137,12 @@ h1, h2, h3, legend,
 a, a:visited{
     text-decoration: none;
     color: #FD9563;
-
 }
 
 li .current{
     border:#FD9563 2px solid;
     padding: 2px;
 }
-
-
 
 
 /******   INDEX.HTML  ******/
@@ -220,22 +209,17 @@ li .current{
 #profile{
     max-width: 438px;
     max-height: 600px;
+    border-radius: 15%;
     
 }
 
 .biographyMain h1{
    font-size: 2em;
+   padding: .5em .5em .5em 0;
+   margin: 1em 2em 1em 2em;
    line-height: 2.5em;
-   margin-bottom: 1em;
-   margin-left: 5%;
+   border-bottom: solid 2px #FD9563;
 } 
-
-/* .biographyMain section{
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    height: 640px;
- }  */
 
  .biographyMain  p {
     margin: 1% 5% 1%;
@@ -244,7 +228,6 @@ li .current{
 }
 
 .biographyMain  p:nth-last-of-type(1) {
-    /* margin-top: auto; */
     margin-bottom: 2em;
 }
 
@@ -258,7 +241,7 @@ li .current{
 }
 
 #resumeMain section h1,
-h2{
+#resumeMain section h2{
     font-size: 2em;
     padding: .5em .5em .5em 0;
     margin: 1em 1em 1em 0;
@@ -267,7 +250,7 @@ h2{
 }
 
 h3{
-    font-size: 1.5em;
+    font-size: 1.65em;
     color: #51333B;
 }
 
@@ -283,6 +266,7 @@ h3{
     margin-right: .5em;
     margin-left: 20px;
     font-size: 1.25em;
+    line-height: 1.75em;
 }
 
 #resumeMain ul{
@@ -324,7 +308,9 @@ aside h3{
     margin-top: 1em;
 }
 
-.galleryHeader {
+.galleryHeader,
+.projectsMain h1,
+.contactMeHeader {
     border-bottom: solid 2px #FD9563;
     font-size: 2em;
     padding: .5em;
@@ -363,79 +349,79 @@ aside h3{
     flex-wrap: wrap;
 }
 
-.projectsMain h1,
-.contactMeHeader{
-    font-size: 2em;
-    padding: .5em;
-    margin: 1em;
-    align-self: flex-start;
-    border-bottom: solid 2px #FD9563;
-}
-
 .projectsMain p{
     width: 80%;
     align-self: center;
     line-height: 1.5em;
+    font-size: 1.5em;
     text-align: center;
+    margin: 40px auto 25px;
+    font-weight: bold;
 }
 
-
-.projectsMain ul{
-    margin-top: 2em;
+.projectSection {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start;
 }
 
-
-.projectsMain ul li,
-.projectsMain ul li img {
-    max-width: 400px;
-    margin: 0;
-
+.projectsArticle {
+    width: 500px;
+    background-color: #9C9383;
+    padding: 15px;
+    margin: 15px;
 }
 
-.projectsMain ul li figcaption {
-    max-width: 400px;
-    padding: .5em;
-    background-color: #51333B; 
-    color: #FD9563;
-    line-height: 1.5em;
-    margin-bottom: 2em;
+.projectsImage {
+    width: 450px;
+    height: 283px;
+    margin: 15px;
+    border: solid #50333B 1px;
+    box-shadow: #50333B 3px 3px 3px;
 }
+
+.projectsH2 {
+    border-bottom: solid 2px #FD9563;
+    font-size: 1.5em;
+}
+    
 
 /******   CONTACT.HTML  ******/
+
+.contactMain {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 form{
     display: flex;
     flex-direction: column;
     margin: 2em;
-    align-content: center;
+    justify-self: center;
     background-color: #9C9383;
     padding: 2em;
+    width: 60%;
 }
 
 legend{
     margin-bottom: 1em;
+    padding-bottom: .20em;
     font-size: 2em;
     border-bottom: solid 2px #FD9563;
 }
 
-fieldset {
-    margin-bottom: 30px;
-}
-
 input {
     display: block;
+    width: 50%;
     margin-left: 30px;
+    line-height: 20px;
 }
 
 form fieldset div,
 textarea{
     max-width: 60%;
-    /* padding: .5em 0; */
-    margin: 0;
+    margin: 0 0 30px;
 }
 
 textarea{
@@ -451,7 +437,6 @@ textarea{
 footer{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly;  */
     background-color: #51333B;
     padding: 2em auto;
     height: 8em;
@@ -460,13 +445,9 @@ footer{
     left: 0;
     width: 100%;
     line-height: 1.5em;
+    margin-top: auto;
     
 }
-
-/* .fixedFooter{
-    bottom: 0;
-    left: 0;
-} */
 
 footer ul{
     padding: 3em auto;
@@ -493,7 +474,7 @@ footer p {
 
 
 
-/******  MEDIA QUERIES ******/
+/************  MEDIA QUERIES ************/
 
 @media only screen and (max-width: 1100px){
 
@@ -558,7 +539,7 @@ footer p {
         width: 100vw;
         position: fixed;
         z-index: 1;
-        background: black;
+        background: rgba(0, 0, 0, 0.913);
         left: -100vw;
         top: 0;
         transition: 0.5s;
@@ -571,7 +552,12 @@ footer p {
     #clickMe {
         position: relative;
         z-index: 10;
-    }
+        border-radius: 15px;
+        background-color: #FD9563;
+        border: 1px solid #50333B;
+        height: 50px;
+        box-shadow: #50333B 1px 1px 
+        1px     }
 
    .navul{
        display: flex;
@@ -674,7 +660,7 @@ footer p {
     #resumeMain section h2{
         max-width: 100%;
         margin: 1em 0;
-        padding: 0;
+        padding: 0 0 .5em;
         font-size: 1.9em;
     }
 
