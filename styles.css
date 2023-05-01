@@ -53,7 +53,7 @@ html{
 }
 
 body{
-    font-family: quicksand; 
+    font-family: 'Quicksand', sans-serif; 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -63,7 +63,7 @@ body{
 
 h1, h2, h3, legend,
 .mainHeader div p:first-child{
-    font-family: pacifico;
+    font-family: 'Pacifico', cursive;
 }
 
 .mainHeader{
@@ -148,15 +148,13 @@ li .current{
 /******   INDEX.HTML  ******/
 
 .hero{
-    background-image: url("img/lifeGuardStand.jpg");
-    height: 100%;
-    width: 100%;
+    background-image: url("./img/lifeGuardStand.jpg");
+    height: 100vh;
+    width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    clear: both; 
-    display: inline-block;
 }
 
 .hero div{
@@ -170,14 +168,14 @@ li .current{
 }
 
 .hero div h1{
-    font-family: pacifico;
+    font-family: 'Pacifico', cursive;
     font-size: 3em;
     margin: 1em;
     line-height: 1.5em;
 }
 
 .hero div h2{
-    font-family: quicksand;
+    font-family:'Quicksand', sans-serif;
     border-bottom: none;
     margin: 1em;
     padding: 0;
@@ -187,7 +185,7 @@ li .current{
 #indexp{
     display: block;
     padding: 1em 20% 1em 20%;
-    font-family: quicksand;
+    font-family: 'Quicksand', sans-serif;
     color: #50333B;
     font-size: 1.5em;
     line-height: 1.75em;
